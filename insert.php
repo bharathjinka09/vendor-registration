@@ -7,7 +7,7 @@
 		  echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
 		  exit();
 		}
-					
+
 			$name = $_POST['name'];
 			$mobile = $_POST['mobile'];
 			$whatsapp = $_POST['whatsapp'];
@@ -51,8 +51,8 @@
 			    if (!empty($name)) {
 			        $location = 'images/';
 
-			        if  (move_uploaded_file($tmp_name, $location.$driving_license)){
-			            echo 'Uploaded';
+			        if  (move_uploaded_file($tmp_name, $location.rand(10,1000).$driving_license)){
+			            echo '';
 			        }
 
 			    } else {
@@ -61,17 +61,18 @@
 			}
 
 			// Perform query
+			$id = mysqli_insert_id($mysqli);
 
 			$mysqli -> query(
 				"INSERT INTO members (name,mobile,whatsapp,email,address,
 				gstin,service,service_area,bank_name,beneficiary_name,account_number,
-				bank_address,ifsc,payment_mode,id_proof,driving_license) VALUES('$name','$mobile','$whatsapp'
-				,'$email','$address','$gstin','$service','$service_area','$bank_name','$beneficiary_name','$account_number','$bank_address','$ifsc','$payment_mode','$id_proof','$driving_license')"
+				bank_address,ifsc,payment_mode,id_proof,driving_license,vendor_id) VALUES('$name','$mobile','$whatsapp'
+				,'$email','$address','$gstin','$service','$service_area','$bank_name','$beneficiary_name','$account_number','$bank_address','$ifsc','$payment_mode','$id_proof','$driving_license','$id')"
 			);
 
 			$mysqli -> close();
 
 			echo "<h2 style='color:green; text-align:center;'><i>Thank you $name. You have registered successfully!</i></h2>";
-			// header("Refresh:3; url=index.html");
+			header("Refresh:3; url=index.html");
 
 ?>
