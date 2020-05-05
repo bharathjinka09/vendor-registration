@@ -23,7 +23,7 @@
 		$bank_address = $_POST['bank_address'];
 		$ifsc = $_POST['ifsc'];
 		$payment_mode = $_POST['payment_mode'];
-		// $id_proof = $_POST['id_proof'];
+		$id_proof = $_POST['id_proof'];
 		// $driving_license = $_POST['driving_license'];
 		
 		// echo $name;
