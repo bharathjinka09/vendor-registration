@@ -1,0 +1,31 @@
+Vendor Registration Form:-
+-------------------
+Name*:(required)
+Mobile*:(required)
+Whatsapp number*:(required)
+Email:
+Address:
+GSTIN:
+Details of services: (Drop down of services)
+Service area: (Drop down of service area with pincodes)
+
+Bank information:-
+----------------
+Bank name
+Beneficiary name
+Account number
+Bank address
+IFSC
+
+Mode of payments:-(Select Box)
+----------------
+Cash/Gpay/Phonepe/Paytm
+
+IDENTITY PROOF:-(Images)
+--------------
+1.AADHAAR/PASSPORT/VOTER CARD*
+2.DRIVING LICENSE*
+
+--------
+|SUBMIT|
+--------
