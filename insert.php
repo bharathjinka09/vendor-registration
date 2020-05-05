@@ -61,13 +61,15 @@
 			}
 
 			// Perform query
-			$id = mysqli_insert_id($mysqli);
+			$id = uniqid();
+			
+			// KABLR40001
 
 			$mysqli -> query(
 				"INSERT INTO members (name,mobile,whatsapp,email,address,
 				gstin,service,service_area,bank_name,beneficiary_name,account_number,
 				bank_address,ifsc,payment_mode,id_proof,driving_license,vendor_id) VALUES('$name','$mobile','$whatsapp'
-				,'$email','$address','$gstin','$service','$service_area','$bank_name','$beneficiary_name','$account_number','$bank_address','$ifsc','$payment_mode','$id_proof','$driving_license','$id')"
+				,'$email','$address','$gstin','$service','$service_area','$bank_name','$beneficiary_name','$account_number','$bank_address','$ifsc','$payment_mode','$id_proof','$driving_license','KABLR4$id')"
 			);
 
 			$mysqli -> close();
