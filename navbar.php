@@ -31,7 +31,15 @@
     </li>
     
     <li class="nav-item">
-      <a class="nav-link" style="color: white;" href="/vendor/vendors.php">Vendors Data</a>
+      <a class="nav-link" style="color: white;" href="/vendor/vendors.php">Profile</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" style="color: white;" href="/vendor/payment.php">Payment</a>
+    </li>
+
+	<li class="nav-item">
+      <a class="nav-link" style="color: white;" href="/vendor/booking_history.php">Booking History</a>
     </li>
   </ul>
 </nav>
