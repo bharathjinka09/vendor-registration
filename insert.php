@@ -66,25 +66,19 @@
 			// KABLR40001
 			
 			foreach($services as $service){
-    			// $mysqli -> query("insert into members values('','$service')");
-				// $a=array("red","green");
-				// array_push($a,"blue","yellow");
-				// print_r($a);
-				// $services_list = array();
-				// array_push($services_list, $service);
-				// print_r($services_list);
 			
-			$mysqli -> query(
-				"INSERT INTO members (name,mobile,whatsapp,email,address,
-				gstin,service,service_area,bank_name,beneficiary_name,account_number,
-				bank_address,ifsc,payment_mode,id_proof,driving_license,vendor_id) 
+				$mysqli -> query(
+					"INSERT INTO members (name,mobile,whatsapp,email,address,
+					gstin,service,service_area,bank_name,beneficiary_name,account_number,
+					bank_address,ifsc,payment_mode,id_proof,driving_license,vendor_id) 
 
-				VALUES('$name','$mobile','$whatsapp','$email','$address','$gstin',
-				'$service','$service_area','$bank_name','$beneficiary_name',
-				'$account_number','$bank_address','$ifsc','$payment_mode',
-				'$location$email$id_proof','$location$email$driving_license','KABLR4$id')"
-			);
-		}
+					VALUES('$name','$mobile','$whatsapp','$email','$address','$gstin',
+					'$service','$service_area','$bank_name','$beneficiary_name',
+					'$account_number','$bank_address','$ifsc','$payment_mode',
+					'$location$email$id_proof','$location$email$driving_license','KABLR4$id')"
+				);
+			}
+			
 			$mysqli -> close();
 
 			echo "<h2 style='color:green; text-align:center;'><i>Thank you $name. You have registered successfully!</i></h2>";
