@@ -29,3 +29,13 @@ IDENTITY PROOF:-(Images)
 --------
 |SUBMIT|
 --------
+
+AC repair
+Plumber
+Painter
+Electrician
+Carpenter
+Cleaning services
+Pest control
+Geyser repair
+Washing machine
