@@ -32,7 +32,7 @@
 			    if (!empty($name)) {
 			        $location = 'images/';
 
-			        if  (move_uploaded_file($tmp_name, $location.rand(10,1000).$id_proof)){
+			        if  (move_uploaded_file($tmp_name, $location.$email.$id_proof)){
 			            echo '';
 			        }
 
@@ -51,7 +51,7 @@
 			    if (!empty($name)) {
 			        $location = 'images/';
 
-			        if  (move_uploaded_file($tmp_name, $location.rand(10,1000).$driving_license)){
+			        if  (move_uploaded_file($tmp_name, $location.$email.$driving_license)){
 			            echo '';
 			        }
 
@@ -62,14 +62,14 @@
 
 			// Perform query
 			$id = uniqid();
-			
+
 			// KABLR40001
 
 			$mysqli -> query(
 				"INSERT INTO members (name,mobile,whatsapp,email,address,
 				gstin,service,service_area,bank_name,beneficiary_name,account_number,
 				bank_address,ifsc,payment_mode,id_proof,driving_license,vendor_id) VALUES('$name','$mobile','$whatsapp'
-				,'$email','$address','$gstin','$service','$service_area','$bank_name','$beneficiary_name','$account_number','$bank_address','$ifsc','$payment_mode','$id_proof','$driving_license','KABLR4$id')"
+				,'$email','$address','$gstin','$service','$service_area','$bank_name','$beneficiary_name','$account_number','$bank_address','$ifsc','$payment_mode','$location$email$id_proof','$location$email$driving_license','KABLR4$id')"
 			);
 
 			$mysqli -> close();
