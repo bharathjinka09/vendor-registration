@@ -14,9 +14,13 @@
 			$email = $_POST['email'];
 			$address = $_POST['address'];
 			$gstin = $_POST['gstin'];
+			
 			$services = $_POST['services'];
 			$services_list = implode(",", $services);
-			$service_area = $_POST['service_area'];
+			
+			$service_areas = $_POST['service_areas'];
+			$service_areas_list = implode(",", $service_areas);
+
 			$bank_name = $_POST['bank_name'];
 			$beneficiary_name = $_POST['beneficiary_name'];
 			$account_number = $_POST['account_number'];
@@ -75,7 +79,7 @@
 				bank_address,ifsc,payment_mode,id_proof,driving_license,vendor_id) 
 
 				VALUES('$name','$mobile','$whatsapp','$email','$address','$gstin',
-				'$services_list','$service_area','$bank_name','$beneficiary_name',
+				'$services_list','$service_areas_list','$bank_name','$beneficiary_name',
 				'$account_number','$bank_address','$ifsc','$payment_mode',
 				'$location$email$id_proof','$location$email$driving_license','KABLR4$id')"
 			);
