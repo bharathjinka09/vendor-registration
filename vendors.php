@@ -60,8 +60,8 @@
 							<td>".$row['bank_address']."</td>
 							<td>".$row['ifsc']."</td>
 							<td>".$row['payment_mode']."</td>
-							<td><img width=100 src=".$row['id_proof']."></td>
-							<td><img width=100 src=".$row['driving_license']."></td>
+							<td><a href=".$row['id_proof']."><img width=100 src=".$row['id_proof']."></a></td>
+							<td><a href=".$row['driving_license']."><img width=100 src=".$row['driving_license']."></a></td>
 						</tr>
 						</tbody>";
 				}
