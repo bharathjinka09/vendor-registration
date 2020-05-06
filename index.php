@@ -55,7 +55,8 @@
 						    <input type="checkbox" name="services[]" value="Washing Machine">Washing Machine
 						</div><br>
 
-						<div>
+						<div class="col-xs-4">
+						    <label><b>Service Areas:</b></label><br>
 							<select class="service_areas" name="service_areas[]" multiple="multiple" style="width: 100%">
       						</select>
 						</div><br>

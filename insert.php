@@ -1,4 +1,6 @@
+
 <?php 
+		include('navbar.php');
 
 		$mysqli = new mysqli("localhost","root","","vendor");
 
@@ -14,7 +16,7 @@
 			$email = $_POST['email'];
 			$address = $_POST['address'];
 			$gstin = $_POST['gstin'];
-			
+
 			$services = $_POST['services'];
 			$services_list = implode(",", $services);
 			
