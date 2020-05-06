@@ -18,7 +18,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<nav style="background-color: grey !important;" class="navbar navbar-expand-lg navbar-dark bg-dark">
   <!-- Brand/logo -->
   <a class="navbar-brand" href="/vendor">
     <img src="images/logo.png" alt="logo" style="width:50%;">
