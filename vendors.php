@@ -3,7 +3,7 @@
 	<div class="container">
 		<h2 class="text-center"><i>Vendors Data</i></h2>
 
-	<table class="table table-responsive table-striped table-bordered">
+	<table id="countTable" class="table table-responsive table-striped table-bordered">
 		<thead>
 		<tr>
 			<th scope="col">ID</th>
@@ -70,3 +70,14 @@
 		?>
 		</table>
 	</div>
+<!-- <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript"  src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+  <script>
+  $(function(){
+    $("#countTable").dataTable();
+
+})
+  </script> -->
+
+  </body>
+</html>
