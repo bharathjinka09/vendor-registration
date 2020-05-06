@@ -87,6 +87,6 @@
 			$mysqli -> close();
 
 			echo "<h2 style='color:green; text-align:center;'><i>Thank you $name. You have registered successfully!</i></h2>";
-			header("Refresh:3; url=index.html");
+			header("Refresh:3; url=index.php");
 
 ?>

@@ -1,19 +1,5 @@
-<!DOCTYPE html>
-<html>
+		<?php include('navbar.php') ?>
 
-<head>
-	<title>Vendor Registration Form</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-	<style type="text/css">
-		body{
-			background: aliceblue;
-		}
-	</style>
-</head>
-
-<body>
 	<div class="container">
 		<h2 class="text-center"><i>Vendor Registration Form</i></h2>
 			<div class="row">
@@ -159,5 +145,3 @@
 			</div>
 		</div>
 	</div>
-</body>
-</html>
