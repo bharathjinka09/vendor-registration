@@ -1,4 +1,4 @@
-		<?php include('navbar.php') ?>
+		<?php include('navbar.html') ?>
 
 	<div class="container">
 		<h2 class="text-center"><i>Vendor Registration Form</i></h2>

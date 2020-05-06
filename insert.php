@@ -89,6 +89,14 @@
 			$mysqli -> close();
 
 			echo "<h2 style='color:green; text-align:center;'><i>Thank you $name. You have registered successfully!</i></h2>";
-			header("Refresh:3; url=index.php");
+			// header("Refresh:3; url=index.php");
+			echo("<script>
+                    setTimeout('Redirect()', 3000);
+                    function Redirect() 
+                    {  
+                        window.location='index.php'; 
+                    } 
+                  </script>"
+                );
 
 ?>

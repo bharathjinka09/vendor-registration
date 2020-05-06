@@ -1,4 +1,4 @@
-		<?php include('navbar.php') ?>
+		<?php include('navbar.html') ?>
 <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
 	<div class="container">
 		<h2 class="text-center"><i>Vendors Data</i></h2>
