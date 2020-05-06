@@ -45,8 +45,9 @@
 			if (isset($_FILES["driving_license"]["name"])) {
 
 			    $driving_license = $_FILES["driving_license"]["name"];
-			    // echo $driving_license;
+
 			    $tmp_name = $_FILES['driving_license']['tmp_name'];
+			    
 			    $error = $_FILES['driving_license']['error'];
 
 			    if (!empty($name)) {
@@ -61,25 +62,23 @@
 			    }
 			}
 
-			// Perform query
+			// Add unique id to vendor 
 			$id = uniqid();
 
 			// KABLR40001
-			
-			// foreach($services as $service){
-			// }
-			
-				$mysqli -> query(
-					"INSERT INTO members (name,mobile,whatsapp,email,address,
-					gstin,service,service_area,bank_name,beneficiary_name,account_number,
-					bank_address,ifsc,payment_mode,id_proof,driving_license,vendor_id) 
 
-					VALUES('$name','$mobile','$whatsapp','$email','$address','$gstin',
-					'$services_list','$service_area','$bank_name','$beneficiary_name',
-					'$account_number','$bank_address','$ifsc','$payment_mode',
-					'$location$email$id_proof','$location$email$driving_license','KABLR4$id')"
-				);
-			// }
+			// Perform query
+			
+			$mysqli -> query(
+				"INSERT INTO members (name,mobile,whatsapp,email,address,
+				gstin,service,service_area,bank_name,beneficiary_name,account_number,
+				bank_address,ifsc,payment_mode,id_proof,driving_license,vendor_id) 
+
+				VALUES('$name','$mobile','$whatsapp','$email','$address','$gstin',
+				'$services_list','$service_area','$bank_name','$beneficiary_name',
+				'$account_number','$bank_address','$ifsc','$payment_mode',
+				'$location$email$id_proof','$location$email$driving_license','KABLR4$id')"
+			);
 
 			$mysqli -> close();
 
