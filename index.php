@@ -55,24 +55,9 @@
 						    <input type="checkbox" name="services[]" value="Washing Machine">Washing Machine
 						</div><br>
 
-						<div class="col-xs-4">
-						    <label><b>Service Areas:</b></label><br>
-						    <input type="checkbox" name="service_areas[]" value="Marathahalli">Marathahalli <br>
-						    <input type="checkbox" name="service_areas[]" value="Koramangala">Koramangala<br>
-						    <input type="checkbox" name="service_areas[]" value="JP Nagar">JP Nagar
-						    <br>
-						    <input type="checkbox" name="service_areas[]" value="Jayanagar">Jayanagar
-						    <br>
-						    <input type="checkbox" name="service_areas[]" value="Silk Board">Silk Board
-						    <br>
-						    <input type="checkbox" name="service_areas[]" value="BTM">BTM
-						    <br>
-						    <input type="checkbox" name="service_areas[]" value="Kadubeesanahalli">Kadubeesanahalli
-						    <br>
-						    <input type="checkbox" name="service_areas[]" value="Whitefield">Whitefield
-						    <br>
-						    <input type="checkbox" name="service_areas[]" value="Munnekolal">Munnekolal
-						    
+						<div>
+							<select class="service_areas" name="service_areas[]" multiple="multiple" style="width: 100%">
+      						</select>
 						</div><br>
 						
 						<label><b>Bank Information:</b></label>
@@ -145,5 +130,16 @@
 			</div>
 		</div>
 	</div>
+
+	<script type="text/javascript">
+		var data = ["Apple", "Banana", "Cherry", "Date", "ElderberriesElderberry"];
+		var placeholder = "Select Service Areas";
+		$(".service_areas").select2({
+		    data: data,
+		    placeholder: placeholder,
+		    allowClear: false,
+		    minimumResultsForSearch: 5
+		});
+	</script>
 </body>
 </html>
