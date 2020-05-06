@@ -24,6 +24,7 @@
 				<th scope="col">Payment Method</th>
 				<th scope="col">ID Proof</th>
 				<th scope="col">Driving License</th>
+				<th scope="col">Registered At</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -57,6 +58,7 @@
 							<td>".$row['payment_mode']."</td>
 							<td><a href=".$row['id_proof']." target='__blank'><img width=100 src=".$row['id_proof']."></a></td>
 							<td><a href=".$row['driving_license']." target='__blank'><img width=100 src=".$row['driving_license']."></a></td>
+							<td>".$row['created_at']."</td>
 						</tr>";
 				}
 				echo "</table>";

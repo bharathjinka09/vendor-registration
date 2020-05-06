@@ -1,6 +1,6 @@
 
 <?php 
-		include('navbar.php');
+		include('navbar.html');
 
 		$mysqli = new mysqli("localhost","root","","vendor");
 
