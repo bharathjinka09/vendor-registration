@@ -5,9 +5,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+	<style type="text/css">
+		body{
+			background: aliceblue;
+		}
+	</style>
+
 
 </head>
 <body>
+	<div class="container">
+
+		<h2 class="text-center"><i>Vendors Data</i></h2>
+
 	<table class="table table-responsive table-striped table-bordered">
 		<thead>
 		<tr>
@@ -60,19 +70,20 @@
 							<td>".$row['bank_address']."</td>
 							<td>".$row['ifsc']."</td>
 							<td>".$row['payment_mode']."</td>
-							<td><a href=".$row['id_proof']."><img width=100 src=".$row['id_proof']."></a></td>
-							<td><a href=".$row['driving_license']."><img width=100 src=".$row['driving_license']."></a></td>
+							<td><a href=".$row['id_proof']." target='__blank'><img width=100 src=".$row['id_proof']."></a></td>
+							<td><a href=".$row['driving_license']." target='__blank'><img width=100 src=".$row['driving_license']."></a></td>
 						</tr>
 						</tbody>";
 				}
 				echo "</table>";
 			}
 			else{
-				echo "0 result";
+				echo "0 results";
 			}
 
 			$conn-> close(); 
 		?>
-		
+		</table>
+	</div>
 </body>
 </html>
