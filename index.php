@@ -100,28 +100,16 @@
 					    <label><b>Identity Proof:</b></label>
 						<div class="col-xs-4">
 						    Aadhar / Passport / Voter Card*: 
-						    <div class="input-group mb-3">
-							  <div class="input-group-prepend">
-							    <span class="input-group-text">Upload</span>
+							  <div>
+							    <input type="file" name="id_proof" required>
 							  </div>
-							  <div class="custom-file">
-							    <input type="file" class="custom-file-input" name="id_proof" required>
-							    <label class="custom-file-label">Choose file</label>
-							  </div>
-							</div>
 						</div><br>
 
 						<div class="col-xs-4">
-						    DRIVING LICENSE*:
-						    <div class="input-group mb-3">
-							  <div class="input-group-prepend">
-							    <span class="input-group-text">Upload</span>
+						    Driving License:
+							  <div>
+							    <input type="file" name="driving_license" required>
 							  </div>
-							  <div class="custom-file">
-							    <input type="file" class="custom-file-input" name="driving_license" required>
-							    <label class="custom-file-label">Choose file</label>
-							  </div>
-							</div>
 						</div><br>
 
 						<div class="col-xs-4">
